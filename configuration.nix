@@ -64,6 +64,9 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
+  services.fprintd.enable = true;
+  services.fprintd.tod.enable = true;
+  services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; 
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -78,6 +81,7 @@
      rofi
      pavucontrol
      acpi
+     git
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
