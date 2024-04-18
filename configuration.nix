@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./aphrodite/hardware-configuration.nix
     ];
 
   # Bootloader.
